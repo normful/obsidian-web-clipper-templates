@@ -2,7 +2,7 @@
   "schemaVersion": "0.1.0",
   "name": "Wikipedia",
   "behavior": "create",
-  "noteContentFormat": "{{selectorHtml:#mw-content-text|remove_html:(\".navbox,.printfooter,.side-box\")|markdown}}",
+  "noteContentFormat": "# {{title}}\n\n## Infobox Data\n\n{{selectorHtml:.infobox}}\n\n## Article Summary\n\n{{content}}\n\n## Image\n\n{{image}}\n\n## Source\n\nWikipedia: {{url}}\nClipped: {{date}}",
   "properties": [
     {
       "name": "title",
